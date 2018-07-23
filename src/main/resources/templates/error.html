@@ -1,0 +1,14 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>捕获全局异常</title>
+</head>
+<body>
+    <h1 style="color: red;">发生错误：</h1>
+    <div th:text="${url}"></div>
+    <div th:text="${exception.message}"></div>
+</body>
+</html>
